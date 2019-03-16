@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Open sans;
+}
+
+
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+
+/* Style tab links */
+.tablink {
+  background-color: #0047b3;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #4d79ff;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #fff;
+  display: flex;
+  padding: 200px 100px;
+  margin: 30px;
+  height: 100%;
+  background-color: #001f4d;
+}
+
+#Home {background-color: #ff1a1a;}
+#News {background-color: #0099ff;}
+#Contact {background-color: #0052cc;}
+#About {background-color: #ff9900;}
+
+
+
+#Home1 {background-color: #47476b;}
+#News1 {background-color: #ff3333;}
+#Contact1 {background-color: #0040ff;}
+#About1 {background-color: #ff8000;}
+
+
+/*body Section*/
+
+
+img {
+	width: 35%;
+	height: auto;
+}
+
+body {
+	background-color: #001a66;
+}
+
+
+/*Footer Section*/
+
+footer {
+	left: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #000d33;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+
+}
+
+footer ul li {
+	align-items: center;
+	margin-left: 300px;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	opacity: 0.6;
+	align-self: center;	
+}
+
+/*header Section*/
+
+header {
+
+}
+
+b {
+	text-align: center;
+}
+
+i {
+	size: 20%;
+	text-align: center;
+	color: #fff;
+}
+
