@@ -14,6 +14,16 @@ body, html {
   font-family: Arial;
 }
 
+/*Mobile Viwe Section*/
+@media (min-width: 400px) (max-width: 880px){
+	img {
+        width: 100%;
+	}
+	.tabcontent {
+		height: 50%;
+	}
+	
+}
 
 
 /* Style tab links */
@@ -37,11 +47,13 @@ body, html {
 .tabcontent {
   color: #fff;
   display: flex;
-  padding: 200px 100px;
+  padding: 100px 70px;
   margin: 30px;
-  height: 100%;
+  height: 170%;
   background-color: #001f4d;
 }
+
+/*background color Section*/
 
 #Home {background-color: #ff1a1a;}
 #News {background-color: #0099ff;}
@@ -59,62 +71,83 @@ body, html {
 /*body Section*/
 
 
-img {
-	width: 35%;
-	height: auto;
-}
 
 body {
 	background-color: #001a66;
 }
 
+h4 {
+    animation: 1s sildefade 1s forwards;
+}
+
+ @keyframes sildefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
 
 /*Footer Section*/
 
 footer {
 	left: 0;
 	bottom: 0;
-	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	background-color: #000d33;
 	color: #fff;
-	padding: 10px 10px;
-	text-align: center;
+	padding: 5px 0px;
 }
 
 footer ul {
-	display: flex;
+	display: inline-flex;
 	list-style: none;
 
 }
 
-footer ul li {
-	align-items: center;
-	margin-left: 300px;
-	flex-wrap: wrap;
+footer ul li i {
+	display: flex;
+	align-items: ;
 	padding: 0;
+	justify-content: space-between;
 }
 
 footer p {
 	text-transform: uppercase;
 	font-size: 14px;
 	opacity: 0.6;
-	align-self: center;	
+	margin-left: 120px;	
+}
+
+i {
+	size: 20%;
+	justify-content: space-between;
+	color: #fff;
 }
 
 /*header Section*/
 
 header {
-
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
 }
 
-b {
-	text-align: center;
+/*IMG Section*/
+
+img {
+	width: 35%;
+	max-width: 100%;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
 }
 
-i {
-	size: 20%;
-	text-align: center;
-	color: #fff;
-}
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
 
+}
