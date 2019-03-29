@@ -1,34 +1,27 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 	font-family: Open sans;
 }
 
-
-
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/*Mobile Viwe Section*/
-@media (min-width: 400px) (max-width: 880px){
-	img {
-        width: 100%;
-	}
-	.tabcontent {
-		height: 50%;
+@media only screen and (max-width: 800px) {
+	body {
+		height: 100%;
+		font-size: 30px;
 	}
 	
 }
 
 
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 1500px;
+  margin: 0%;
+  font-family: Arial;
+}
+
+
 /* Style tab links */
 .tablink {
-  background-color: #0047b3;
+  background-color: #001a66;
   color: white;
   float: left;
   border: none;
@@ -37,6 +30,9 @@ body, html {
   padding: 15px 16px;
   font-size: 17px;
   width: 50%;
+  border-radius: 20px;
+  border-style: ridge;
+  background-image: linear-gradient(to right left, #001a66 ,#1a53ff )
 }
 
 .tablink:hover {
@@ -47,107 +43,89 @@ body, html {
 .tabcontent {
   color: #fff;
   display: flex;
-  padding: 100px 70px;
-  margin: 30px;
-  height: 170%;
-  background-color: #001f4d;
+  padding: 0px 50px;
+  margin: px;
+  height: 100%;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #001f4;
 }
 
-/*background color Section*/
+#Home {
+	background-color: #ff1a1;
+	background-image: linear-gradient(to right left, #990000, #ff1a1a )
+}
+#News {
+	background-color: #0099f;
+	background-image: linear-gradient(to bottom top, , #0099ff )
+}
+#Contact {
+	background-color: #0052c;
+}
+#About {
+	background-color: #ff990;
+}
 
-#Home {background-color: #ff1a1a;}
-#News {background-color: #0099ff;}
-#Contact {background-color: #0052cc;}
-#About {background-color: #ff9900;}
 
 
-
-#Home1 {background-color: #47476b;}
-#News1 {background-color: #ff3333;}
-#Contact1 {background-color: #0040ff;}
-#About1 {background-color: #ff8000;}
+#Home1 {
+	background-color: #47476;
+}
+#News1 {
+	background-color: #ff333;
+}
+#Contact1 {
+	background-color: #0040f;
+}
+#About1 {
+	background-color: #ff800;
+}
 
 
 /*body Section*/
 
 
+img {
+	width: 35%;
+	height: auto;
+}
 
 body {
-	background-color: #001a66;
+	background-image: linear-gradient(to bottom right, #001a66 ,#1a53ff )
 }
 
-h4 {
-    animation: 1s sildefade 1s forwards;
-}
-
- @keyframes sildefade {
-	100% {
-		opacity: 1;
-		margin: 0;
-	}
-}
 
 /*Footer Section*/
 
 footer {
-	left: 0;
-	bottom: 0;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #000d33;
 	color: #fff;
-	padding: 5px 0px;
+	text-align: center;
+	border-radius: 7px;
+	position: bottom;
+	padding: 10px;
+	background-image: linear-gradient(to bottom right, #001a66 ,#1a53ff )
 }
 
-footer ul {
-	display: inline-flex;
-	list-style: none;
-
-}
-
-footer ul li i {
-	display: flex;
-	align-items: ;
-	padding: 0;
+footer a {
 	justify-content: space-between;
-}
-
-footer p {
-	text-transform: uppercase;
-	font-size: 14px;
-	opacity: 0.6;
-	margin-left: 120px;	
-}
-
-i {
-	size: 20%;
-	justify-content: space-between;
-	color: #fff;
 }
 
 /*header Section*/
 
 header {
-	animation: 1s fadein 0.5s forwards;
-	opacity: 0;
-}
-@keyframes fadein {
-	100% {
-		opacity: 1;
-	}
+	padding: 20px;
 }
 
-/*IMG Section*/
-
-img {
-	width: 35%;
-	max-width: 100%;
-	animation: 1s fadein 0.5s forwards;
-	opacity: 0;
+b {
+	text-align: center;
 }
 
-@keyframes fadein {
-	100% {
-		opacity: 1;
-	}
-
+i {
+	size: 20%;
+	text-align: center;
+	color: #fff;
 }
+
+
